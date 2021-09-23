@@ -23,8 +23,7 @@ function onLoad(event) {
     //   한 줄에 16 바이트씩 출력
     //
 
-    if(0 != i && 0 == i % 16)
-    {
+    if(0 != i && 0 == i % 16) {
       hex += "\n";
     }
 
@@ -39,8 +38,7 @@ function onLoad(event) {
     //   ex) F => 0F
     //
 
-    if(2 > byte.length)
-    {
+    if(2 > byte.length) {
       byte = "0" + byte;
     }
     hex += (byte + " ");
