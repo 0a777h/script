@@ -6,9 +6,12 @@
 
 <html>
     <script src="hex.js" defer></script>        
+    <head>
+        <link rel="stylesheet" href="external/css/bootstrap.css"/>
+    </head>
     <body>
         <input id="loadFile" type="file" onchange="loadFile(event)" style="display:none;" />
-        <button id="loadButton" onclick="openFile()">Load</button>
+        <button id="loadButton" class="btn btn-outline-primary" onclick="openFile()">Load</button>
         <pre id="result"></pre>
     </body>
 </html>
