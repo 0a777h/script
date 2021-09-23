@@ -1,0 +1,17 @@
+<!-- 
+    INPUT과 BUTTON
+    * input의 경우, 아이콘 입력을 위해서는 CSS가 필요
+    * button의 경우, img 태그로 처리 가능
+-->
+
+<html>
+    <script src="hex.js" defer></script>        
+    <body>
+        <input id="loadFile" type="file" onchange="loadFile(event)" style="display:none;" />
+        <button id="loadButton" onclick="openFile()">Load</button>
+        <pre id="result"></pre>
+    </body>
+</html>
+
+
+
