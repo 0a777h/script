@@ -26,7 +26,7 @@ function onLoad(event) {
     if (i == 0) {
       hex += getFileOffset(i);
     }
-    else if(0 == i % 16) {
+    else if (0 == i % 16) {
       hex += "\n";
       hex += getFileOffset(i);
     }
@@ -47,20 +47,12 @@ function onLoad(event) {
     }
     hex += (byte + " ");
   }
-
   document.getElementById('result').innerHTML = hex;
 }
 
-/**
- * 
- *
- * 
- */
-function getFileOffset(offset)
-{
+function getFileOffset(offset) {
   var result = "   ";
-  for(var j = 0; j < 8 - offset.toString(10).length; ++j)
-  {
+  for(var j = 0; j < 8 - offset.toString(10).length; ++j) {
     result += "0";
   }
   result += (offset.toString(10) + "   ");
